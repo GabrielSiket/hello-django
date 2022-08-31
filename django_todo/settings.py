@@ -10,8 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
-import dj_database_url
 from pathlib import Path
+import dj_database_url
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,7 @@ SECRET_KEY = 'django-insecure-u5p()t&d23!rv%#6lq5qc09exg2+tw5n0w@t$68ucnvbg1bg&c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ci-todo-app.herokuapp.com']
+ALLOWED_HOSTS = ['ci-todo-app.herokuapp.com', 'localhost']
 
 
 # Application definition
